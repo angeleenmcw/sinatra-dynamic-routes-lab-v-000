@@ -36,7 +36,14 @@ class App < Sinatra::Base
     case 
     when "substract"
       (@number1-@number2).to_s
-      
+    when "add"
+      (@number1+@number2).to_s
+    when "multiply"
+      (@number1*@number2).to_s 
+    when "divide"
+      (@number1/@number2).to_s
+    end
+    
       
     
 end
