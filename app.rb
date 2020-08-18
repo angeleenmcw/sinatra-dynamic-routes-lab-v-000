@@ -45,7 +45,4 @@ class App < Sinatra::Base
       (@number1/@number2).to_s
     end
   end
-    
-      
-    
 end
