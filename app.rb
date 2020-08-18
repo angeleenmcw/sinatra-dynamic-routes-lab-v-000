@@ -31,10 +31,10 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
-    @operation = params[:operation]
+    @oper = params[:operation]
     @number1 = params[:number1]
     @number2 = params[:number2]
-    case @operation
+    case @oper
     when "substract"
       (@number1-@number2).to_s
     when "add"
